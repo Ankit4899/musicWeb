@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPOTIFY</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Spotify lite</h1>
+        </header>
+        <main>
+            <div class="player">
+                <h2>Now Playing</h2>
+                <div class="track-info">
+                    <img src="song.jpeg" alt="Album Cover" class="album-cover">
+                    <div class="track-details">
+                        <h3 id="track-name">Track Name</h3>
+                        <p id="artist-name">Artist Name</p>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button id="prev">Prev</button>
+                    <button id="play">Play</button>
+                    <button id="next">Next</button>
+                </div>
+                <!-- <audio id="audio-player" controls>
+                    <source src="spotify.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio> -->
+
+                <audio id="audio-player" controls>
+                    <source src="song.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <!-- For searching songs -->
+                <div class="search">
+                    <input type="text" id="search-box" placeholder="Search for a song...">
+                </div>
+
+
+
+                <div class="playlist">
+                    <h3>Playlist</h3>
+                    <ul id="playlist">
+                        <!-- Playlist items will be dynamically inserted here -->
+
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>© 2024 Music Player</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
